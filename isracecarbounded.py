@@ -64,15 +64,15 @@ class Solution:
             while True:
                 for i in instructions:
                     if i == "G":
-                        initial_pos[1]=initial_pos[1]+1
+                        cur_pos[1]=cur_pos[1]+1
                     
                     if i =="L":
-                        initial_pos[0]=initial_pos[0]-1
-                        initial_pos[1]=initial_pos[1]+1
+                        cur_pos[0]=cur_pos[0]-1
+                        cur_pos[1]=cur_pos[1]+1
 
                     if i =="R":
-                        initial_pos[0]=initial_pos[0]+1
-                        initial_pos[1]=initial_pos[1]+1
+                        cur_pos[0]=cur_pos[0]+1
+                        cur_pos[1]=cur_pos[1]+1
 
                     
                     if initial_pos==cur_pos:
