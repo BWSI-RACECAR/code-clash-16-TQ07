@@ -62,7 +62,7 @@ class Solution:
             cur_dir=2
 
             while True:
-                for i in range(instructions):
+                for i in instructions:
                     if i == "G":
                         initial_pos[1]=initial_pos[1]+1
                     
