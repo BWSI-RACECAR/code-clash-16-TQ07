@@ -58,26 +58,7 @@ class Solution:
             #return type: boolean
             initial_pos=[0,0]
             cur_pos=[0,0]
-            #direction= ['S':0,'W':1,'N':2,'E':3] Reference for cur_dir (current direction)
-            cur_dir=2
-
-            while True:
-                for i in instructions:
-                    if i == "G":
-                        cur_pos[1]=cur_pos[1]+1
-                    
-                    if i =="L":
-                        cur_pos[0]=cur_pos[0]-1
-                        cur_pos[1]=cur_pos[1]+1
-
-                    if i =="R":
-                        cur_pos[0]=cur_pos[0]+1
-                        cur_pos[1]=cur_pos[1]+1
-
-                    
-                    if initial_pos==cur_pos:
-                        return True
-            return False
+            return instructions.count("R") != instructions.count("L")
             
         
         
